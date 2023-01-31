@@ -1,0 +1,44 @@
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+GET http://localhost:3000/states/4/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
+
+###
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
+Content-Type: application/json
+
+{
+  "districtName": "Bagehot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+GET http://localhost:3000/districts/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
+
+###
+DELETE http://localhost:3000/districts/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
+
+###
+PUT http://localhost:3000/districts/9/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
+
+###
+GET http://localhost:3000/states/8/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc1MTY0MzIzfQ.GlV7vSK7wej9eQCUrjjN4X3Manoii9a00ncGzNNLQLg
